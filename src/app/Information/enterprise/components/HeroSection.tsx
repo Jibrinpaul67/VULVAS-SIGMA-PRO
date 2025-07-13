@@ -9,7 +9,7 @@ const HeroSection = () => {
           <span className="text-white">Powered by AI</span>
         </h1>
         <p className="text-xl text-white/90 mb-6">
-          Experience next-level protection with VULAS Sigma Plus
+          Experience next-level protection with VULAS Plans
         </p>
         <button
           className="bg-white text-[#0052B4] px-6 py-3 rounded-full hover:bg-gray-100 

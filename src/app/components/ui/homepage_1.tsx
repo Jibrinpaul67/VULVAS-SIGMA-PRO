@@ -16,12 +16,12 @@ const HomePage_1 = () => {
 
         {/* Bigger, rounder button with spacing below */}
         <Button className="bg-[#00003B] text-white px-6 sm:px-8 py-3 sm:py-4 mt-4 sm:mt-6 rounded-full text-base sm:text-lg shadow-md hover:bg-[#00002A] w-full sm:w-auto">
-          Free Download
+          Download Free Trial
         </Button>
 
         {/* Spacing added before this text */}
         <p className="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4">
-          Install on popular browsers like Chrome & Mozilla Firefox.
+          Install on popular browsers like Chrome, Mozilla Firefox and others.
         </p>
       </div>
 

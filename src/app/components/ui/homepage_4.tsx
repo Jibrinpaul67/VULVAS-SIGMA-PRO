@@ -18,14 +18,14 @@ const HomePage4 = () => {
       {/* Text on left */}
       <div className="w-full md:w-1/2 flex flex-col justify-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 text-center md:text-left">
-          <span className="text-blue-700">It&apos;s so easy to install — </span>switching to Vulas takes seconds
+          <span className="text-blue-700">It&apos;s so easy to install — </span>switching to VULAS takes seconds
         </h1>
         <p className="text-base sm:text-lg text-gray-600 mt-4 text-center md:text-left">
-        It&apos;s quick and easy to install, and gives you all the protection you need to live your online life securely. And it&apos;s totally free — so give it a try right now.
+        It&apos;s quick and easy to install, and gives you all the protection you need to live your online life securely. And it&apos;s totally AI-driven — so give it a try right now.
         </p>
         <div className="flex justify-center md:justify-start">
           <Button className="bg-[#0052B4] text-white px-6 py-3 mt-4 rounded-lg shadow-md hover:bg-[#003D8F] transition-colors">
-            Free Download
+            Download Free Trial
           </Button>
         </div>
       </div>
