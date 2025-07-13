@@ -16,6 +16,7 @@ const HeroSection = () => {
         >
           Explore Solutions
         </button>
+      
       </div>
       <div className="md:w-1/2">
         <Image 

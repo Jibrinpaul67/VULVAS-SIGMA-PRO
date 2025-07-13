@@ -1,17 +1,17 @@
 const reviews = [
   {
     name: "Chinedu Okafor",
-    review: "Vulvas Security has completely transformed my online safety. I feel much more secure knowing my devices are protected!",
+    review: "VULAS Security has completely transformed my online safety. I feel much more secure knowing my devices are protected!",
     role: "IT Manager"
   },
   {
-    name: "Aisha Bello",
-    review: "Easy to use and highly effective. I highly recommend this antivirus for anyone serious about cybersecurity.",
-    role: "Small Business Owner"
+    name: "Steven Osonuga",
+    review: "Easy to use and highly effective. I highly recommend this security solution for anyone serious about cybersecurity.",
+    role: "Cyber Security Specialist"
   },
   {
-    name: "Tunde Adebayo",
-    review: "Fast, reliable, and efficient! The best antivirus tool I have used so far.",
+    name: "Jibrin-Paul Esther",
+    review: "Fast, reliable, and efficient! The best security tool I have used so far.",
     role: "Software Developer"
   },
 ];

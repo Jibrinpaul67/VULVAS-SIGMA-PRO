@@ -21,7 +21,7 @@ const HomePage3 = () => {
           <span className="text-blue-700">Lock Down Your Cyber Future -</span> Trust AI-VULAS for Unmatched Security
         </h1>
         <p className="text-base sm:text-lg text-gray-600 mt-4 text-center md:text-left">
-          Stay Protected, Stay Secure: Explore Our Antivirus Plans Today
+          Stay Protected, Stay Secure: Explore Our Business Security Plans Today
         </p>
         <div className="flex justify-center md:justify-start">
           <Button className="bg-[#0052B4] text-white px-6 py-3 mt-4 rounded-lg shadow-md hover:bg-[#003D8F] transition-colors">
