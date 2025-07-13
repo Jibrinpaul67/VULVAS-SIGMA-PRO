@@ -6,7 +6,7 @@ const ComparisonSection = () => {
           Enterprise-level privacy, security
         </h2>
         <p className="text-xl text-gray-500">
-          Enjoy Unified Security Solutions Against Evolving Cyber Threats with VULAS Sigma Pro
+          Enjoy Unified Security Solutions Against Evolving Cyber Threats with VULAS Plans
         </p>
       </div>
 
