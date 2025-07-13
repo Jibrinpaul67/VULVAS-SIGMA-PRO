@@ -116,7 +116,7 @@ const Navbar = () => {
                     href="/plans/vulas-plus-pro" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
-                    VULAS SIGMA PLUS PRO
+                    VULAS SIGMA PRO
                   </Link>
                 </div>
               )}
@@ -227,7 +227,7 @@ const Navbar = () => {
                     href="/plans/vulas-plus-pro" 
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
                   >
-                    VULAS SIGMA PLUS PRO
+                    VULAS SIGMA PRO
                   </Link>
                 </div>
               )}

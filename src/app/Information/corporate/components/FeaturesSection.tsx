@@ -23,10 +23,6 @@ const FeaturesSection = () => {
     description: "Defend against sophisticated cyber threats with layered firewall systems, intrusion detection, and network segmentation."
   },
   {
-    title: "Zero Trust Architecture",
-    description: "Implement a ‘never trust, always verify’ model across users, devices, and applications."
-  },
-  {
     title: "Cloud Security and Compliance",
     description: "Ensure secure cloud operations with data encryption, continuous monitoring, and adherence to global compliance standards."
   },
