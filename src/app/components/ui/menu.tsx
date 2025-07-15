@@ -161,7 +161,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <Link href="/plans/productPlans" className="hover:underline hover:text-[#0052B4]">Product Plans</Link>
+            <Link href="/plans/productPlans" className="hover:underline hover:text-[#0052B4] text-black">Product Plans</Link>
             <Link href="/privacy" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Privacy</Link>
             <Link href="/Information/partners" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Partners</Link>
             <Link href="/store" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Store</Link>
