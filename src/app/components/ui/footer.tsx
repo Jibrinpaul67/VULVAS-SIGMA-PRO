@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-blue-950 text-white py-6 sm:py-8 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         <div className="mb-4 md:mb-0">
-          <h2 className="text-lg sm:text-xl font-semibold">VULAS Business Solution</h2>
+          <h2 className="text-lg sm:text-xl font-semibold">VULAS Business Security Solutions</h2>
           <p className="text-gray-400 mt-1 sm:mt-2 text-sm sm:text-base">Your trusted cybersecurity partner.</p>
         </div>
         <nav className="flex flex-wrap justify-center gap-4 sm:gap-6">

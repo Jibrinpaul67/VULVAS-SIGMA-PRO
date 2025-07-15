@@ -9,7 +9,6 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isServiceDropdownOpen, setServiceDropdownOpen] = useState(false);
-  const [isPlansDropdownOpen, setIsPlansDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,10 +25,6 @@ const Navbar = () => {
 
     const toggleServiceDropdown = () => {
     setServiceDropdownOpen(!isServiceDropdownOpen);
-  };
-
-  const togglePlansDropdown = () => {
-    setIsPlansDropdownOpen(!isPlansDropdownOpen);
   };
 
   return (
@@ -87,41 +82,8 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            
-            {/* Plans Dropdown */}
-            <div className="relative">
-              <button 
-                onClick={togglePlansDropdown}
-                className="flex items-center hover:underline hover:text-[#0052B4]"
-              >
-                Check Plans
-                {isPlansDropdownOpen ? <ChevronUp size={16} className="ml-1" /> : <ChevronDown size={16} className="ml-1" />}
-              </button>
-              
-              {isPlansDropdownOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
-                  <Link 
-                    href="/plans/vulas" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                    VULAS SIGMA
-                  </Link>
-                  <Link 
-                    href="/plans/vulas-plus" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                    VULAS SIGMA PLUS
-                  </Link>
-                  <Link 
-                    href="/plans/vulas-plus-pro" 
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                    VULAS SIGMA PRO
-                  </Link>
-                </div>
-              )}
-            </div>
-
+ 
+            <Link href="/plans/productPlans" className="hover:underline hover:text-[#0052B4]">Product Plans</Link>
             <Link href="/privacy" className="hover:underline hover:text-[#0052B4]">Privacy</Link>
             <Link href="/Information/partners" className="hover:underline hover:text-[#0052B4]">Partners</Link>
             <Link href="/store" className="hover:underline hover:text-[#0052B4]">Store</Link>
@@ -198,41 +160,8 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            
-            {/* Mobile Plans Dropdown */}
-            <div className="relative">
-              <button 
-                onClick={() => setIsPlansDropdownOpen(!isPlansDropdownOpen)}
-                className="flex items-center justify-between w-full py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black"
-              >
-                Check Plans
-                {isPlansDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-              </button>
-              
-              {isPlansDropdownOpen && (
-                <div className="pl-4 mt-1 space-y-2">
-                  <Link 
-                    href="/plans/vulas" 
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
-                  >
-                    VULAS SIGMA
-                  </Link>
-                  <Link 
-                    href="/plans/vulas-plus" 
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
-                  >
-                    VULAS SIGMA PLUS
-                  </Link>
-                  <Link 
-                    href="/plans/vulas-plus-pro" 
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
-                  >
-                    VULAS SIGMA PRO
-                  </Link>
-                </div>
-              )}
-            </div>
 
+            <Link href="/plans/productPlans" className="hover:underline hover:text-[#0052B4]">Product Plans</Link>
             <Link href="/privacy" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Privacy</Link>
             <Link href="/Information/partners" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Partners</Link>
             <Link href="/store" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Store</Link>
