@@ -7,7 +7,7 @@ const ProtectionBanner = () => {
       <div className="w-full md:w-1/2 text-center md:text-left mb-6 md:mb-0">
         <div className="flex items-center space-x-3 mb-4 justify-center md:justify-start">
           <Image src="/logo.png" alt="Vulvas Logo" width={40} height={40} className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px]" />
-          <h2 className="text-lg sm:text-xl font-semibold">Vulvas Security Antivirus</h2>
+          <h2 className="text-lg sm:text-xl font-semibold">VULAS Business Security Solutions</h2>
         </div>
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
           Guarding your devices<br />against threat
