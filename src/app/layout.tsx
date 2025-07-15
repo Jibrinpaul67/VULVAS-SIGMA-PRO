@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vulvas Security - Advanced Antivirus Protection",
-  description: "Protect your devices from cyber threats with Vulvas Security Antivirus",
+  title: "Vulvas Security - Advanced Foolproof Security Solutions",
+  description: "Protect your devices from cyber threats with Vulvas' driven endpoint security",
   viewport: "width=device-width, initial-scale=1", // Added viewport meta tag
 };
 
