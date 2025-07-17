@@ -7,7 +7,7 @@ const Footer = () => {
           <p className="text-gray-400 mt-1 sm:mt-2 text-sm sm:text-base">Your trusted cybersecurity partner.</p>
         </div>
         <nav className="flex flex-wrap justify-center gap-4 sm:gap-6">
-          <a href="#" className="text-gray-300 hover:text-white text-sm sm:text-base">Privacy Policy</a>
+          <a href="/privacy" className="text-gray-300 hover:text-white text-sm sm:text-base">Privacy Policy</a>
           <a href="#" className="text-gray-300 hover:text-white text-sm sm:text-base">Terms of Service</a>
           <a href="/support" className="text-gray-300 hover:text-white text-sm sm:text-base">Support</a>
           <a href="#" className="text-gray-300 hover:text-white text-sm sm:text-base">Contact Us</a>

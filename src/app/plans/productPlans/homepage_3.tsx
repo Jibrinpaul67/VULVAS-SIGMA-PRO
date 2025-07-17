@@ -19,10 +19,10 @@ const HomePage3 = () => {
       {/* Text on right */}
       <div className="w-full md:w-1/2 flex flex-col justify-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 text-center md:text-left">
-          <span className="text-blue-700">VULAS Sigma Pro-</span> Trust AI-VULAS for Unmatched Security
+          <span className="text-blue-700">VULAS Sigma Pro-</span> Centralized control, maximum Security
         </h1>
         <p className="text-base sm:text-lg text-gray-600 mt-4 text-center md:text-left">
-          Stay Protected, Stay Secure: Explore Our Business Security Plans Today
+       From sniffers to hackers, VULAS Sigma Pro shuts them down with next level endpoint protection, real-time monitoring and total device control.
         </p>
         <div className="flex justify-center md:justify-start">
           <Link   href="/plans/vulas-plus-pro"   >
