@@ -19,7 +19,7 @@ const HomePage4 = () => {
       {/* Text on left */}
       <div className="w-full md:w-1/2 flex flex-col justify-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 text-center md:text-left">
-          <span className="text-blue-700">VULAS Sigma Plus- </span>Elite security for digital battlefields
+          <span className="text-blue-700">VULAS Sigma Plus- </span>Elite Security for Digital Battlefields
         </h1>
         <p className="text-base sm:text-lg text-gray-600 mt-4 text-center md:text-left">
         Arm your device with next-gen defenses-From ransomware to CEO fraud and lots more.

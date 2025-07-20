@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Button from './button';
+import Link from "next/link";
 
 const HomePage3 = () => {
   return (
@@ -24,9 +25,11 @@ const HomePage3 = () => {
           Stay Protected, Stay Secure: Explore Our Business Security Plans Today
         </p>
         <div className="flex justify-center md:justify-start">
+          <Link href="/plans/productPlans">
           <Button className="bg-[#0052B4] text-white px-6 py-3 mt-4 rounded-lg shadow-md hover:bg-[#003D8F] transition-colors">
             View Plans
           </Button>
+          </Link>
         </div>
       </div>
     </div>

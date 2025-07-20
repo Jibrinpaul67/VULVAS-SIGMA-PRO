@@ -1,27 +1,33 @@
 const Pricing = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {[
           {
             name: "Individual",
-            price: "$35,000",
+            price: "₦35,000",
             devices: "1-5 Devices per year"
           },
           {
             name: "Enterprise",
-            price: "$72,000",
+            price: "₦72,000",
             devices: "6-20 Devices per year"
           },
           {
             name: "Institutional",
-            price: "$120,000",
+            price: "₦120,000",
             devices: "21-50 Devices per year"
           },
           {
             name: "Corporate",
-            price: "$230,000",
+            price: "₦230,000",
             devices: "51-100 Devices per year"
+          }
+          ,
+          {
+            name: "Custom",
+            price: "₦200,000",
+            devices: ">100 Devices per year"
           }
         ].map((plan, index) => (
           <div key={index} className="flex flex-col h-full rounded-lg p-6 text-center">

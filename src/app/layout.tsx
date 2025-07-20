@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "VULAS Security - Advanced Foolproof Security Solutions",
-  description: "Protect your devices from cyber threats with VULAS' driven endpoint security",
+  description: "Protect your devices from cyber threats with VULAS' AI driven endpoint security",
   viewport: "width=device-width, initial-scale=1", // Added viewport meta tag
 };
 

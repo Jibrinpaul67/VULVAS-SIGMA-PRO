@@ -6,7 +6,7 @@ const Features = () => {
           <span className="text-[#0052B4]">VULAS</span>
           <span className="text-black"> SIGMA PRO</span>
         </h1>
-        <h2 className="text-lg sm:text-xl text-black">VULAS Security Business Solution offers the following solutions:</h2>
+        <h2 className="text-lg sm:text-xl text-black">VULAS Enterprise Endpoint Security offers the following solutions:</h2>
       </div>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

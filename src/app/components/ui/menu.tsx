@@ -40,9 +40,9 @@ const Navbar = () => {
             <Image 
               src="/vulas_logo.svg" 
               alt="VULAS Logo" 
-              width={80} 
-              height={80} 
-              className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] hover:opacity-80 transition-opacity"
+              width={100} 
+              height={100} 
+              className="w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] hover:opacity-80 transition-opacity"
               priority
             />
           </Link>
@@ -65,19 +65,25 @@ const Navbar = () => {
                    href="/Information/institution"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
-                    FOR INSTITUTION
+                    Institution
                   </Link>
                   <Link 
                     href="/Information/enterprise"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
-                   FOR ENTERPRISE
+                    Enterprise
                   </Link>
                   <Link 
                    href="/Information/corporate"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
-                    FOR CORPORATE
+                   Corporate
+                  </Link>
+                    <Link 
+                     href="/Information/corporate"
+                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] "
+                  >
+                   Custom
                   </Link>
                 </div>
               )}
@@ -143,19 +149,25 @@ const Navbar = () => {
                    href="/Information/institution" 
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
                   >
-                    FOR INSTITUTION
+                    Institution
                   </Link>
                   <Link 
                    href="/Information/enterprise"
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
                   >
-                    FOR ENTERPRISE
+                    Enterprise
                   </Link>
                   <Link 
                      href="/Information/corporate"
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
                   >
-                    FOR CORPORATE
+                    Corporate
+                  </Link>
+                    <Link 
+                     href="/Information/corporate"
+                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
+                  >
+                    Custom
                   </Link>
                 </div>
               )}
