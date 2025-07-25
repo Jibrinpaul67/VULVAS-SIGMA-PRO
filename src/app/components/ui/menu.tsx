@@ -62,6 +62,12 @@ const Navbar = () => {
               {isServiceDropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
                   <Link 
+                   href="/Information/individual"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
+                  >
+                    Individual
+                  </Link>
+                  <Link 
                    href="/Information/institution"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
@@ -144,6 +150,12 @@ const Navbar = () => {
               
               {isServiceDropdownOpen && (
                 <div className="pl-4 mt-1 space-y-2">
+                  <Link 
+                   href="/Information/individual"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
+                  >
+                    Individual
+                  </Link>
                   <Link 
                    href="/Information/institution" 
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
