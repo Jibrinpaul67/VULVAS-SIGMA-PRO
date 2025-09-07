@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isServiceDropdownOpen, setServiceDropdownOpen] = useState(false);
+   const [isAccountDropdownOpen, setAccountDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +28,12 @@ const Navbar = () => {
     setServiceDropdownOpen(!isServiceDropdownOpen);
   };
 
+   const toggleAccountDropdown = () => {
+    setAccountDropdownOpen(!isAccountDropdownOpen);
+  };
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 
+      className={`fixed top-0 left-0 w-full z-50 h-20 transition-all duration-300 
       ${isScrolled ? "bg-white/80 backdrop-blur-md shadow-md" : "bg-white"}
       `}
     >
@@ -62,13 +66,13 @@ const Navbar = () => {
               {isServiceDropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
                   <Link 
-                   href="/Information/individual"
+                  href="/Information/individual"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
                     Individual
                   </Link>
                   <Link 
-                   href="/Information/institution"
+                  href="/Information/institution"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
                     Institution
@@ -80,16 +84,16 @@ const Navbar = () => {
                     Enterprise
                   </Link>
                   <Link 
-                   href="/Information/corporate"
+                  href="/Information/corporate"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
                   >
-                   Corporate
+                  Corporate
                   </Link>
                     <Link 
-                     href="/Information/corporate"
+                    href="/Information/corporate"
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] "
                   >
-                   Custom
+                  Custom
                   </Link>
                 </div>
               )}
@@ -117,11 +121,38 @@ const Navbar = () => {
             <span className="text-sm sm:text-base">Support</span>
           </Link>
 
-          {/* Account - Hidden on smaller screens */}
+          {/* Account - Hidden on smaller screens
           <Link href="/account" className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]">
             <User size={16} className="sm:w-5 sm:h-5" />
             <span className="text-sm sm:text-base">Account</span>
-          </Link>
+          </Link> */}
+
+     <div className="relative">
+              <button 
+                onClick={toggleAccountDropdown}
+                className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]"
+              >
+                <User size={16} className="sm:w-5 sm:h-5" />
+                Account
+                {isAccountDropdownOpen ? <ChevronUp size={16} className="ml-1" /> : <ChevronDown size={16} className="ml-1" />}
+              </button>
+              
+              {isAccountDropdownOpen && (
+                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
+               
+                    <Link 
+                     href="/account/login"
+                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
+                   Log In
+                  </Link>
+                  <Link 
+                     href="/account/signup"
+                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
+                   Sign Up
+                  </Link>
+                </div>
+              )}
+            </div>
 
           {/* Mobile Menu Button */}
           <button 
@@ -142,7 +173,7 @@ const Navbar = () => {
             <div className="relative">
               <button 
                 onClick={() => setServiceDropdownOpen(!isServiceDropdownOpen)}
-                className="flex items-center justify-between w-full py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black"
+                className="flex items-center justify-between w-full h-20 py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black"
               >
                 Service Tiers
                 {isServiceDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
@@ -199,10 +230,39 @@ const Navbar = () => {
               <Headphones size={18} />
               <span>Support</span>
             </Link>
-            <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
+            {/* <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
               <User size={18} />
               <span>Account</span>
-            </Link>
+            </Link> */}
+
+            <div className="relative">
+              <button 
+                onClick={toggleAccountDropdown}
+                className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]"
+              >
+                <User size={16} className="sm:w-5 sm:h-5" />
+                Account
+                {isAccountDropdownOpen ? <ChevronUp size={16} className="ml-1" /> : <ChevronDown size={16} className="ml-1" />}
+              </button>
+              
+              {isAccountDropdownOpen && (
+                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
+               
+                    <Link 
+                     href="/account/login"
+                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
+                   Log In
+                  </Link>
+                  <Link 
+                     href="/account/signup"
+                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
+                   Sign Up
+                  </Link>
+                </div>
+              )}
+            </div>
+
+
           </div>
         </div>
       )}
