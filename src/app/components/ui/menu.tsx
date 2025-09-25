@@ -90,7 +90,7 @@ const Navbar = () => {
                   Corporate
                   </Link>
                     <Link 
-                    href="/Information/corporate"
+                    href="/Information/custom"
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] "
                   >
                   Custom
@@ -103,7 +103,7 @@ const Navbar = () => {
             <Link href="/privacy" className="hover:underline hover:text-[#0052B4]">Privacy</Link>
             <Link href="/Information/partners" className="hover:underline hover:text-[#0052B4]">Partners</Link>
             <Link href="/about" className="hover:underline hover:text-[#0052B4]">About Us</Link>
-            <Link href="/Information/newsletter" className="hover:underline hover:text-[#0052B4]">Newsletter</Link>
+            <Link href="/Information/newsletter" className="hover:underline hover:text-[#0052B4]">Newsletter</Link> 
           </nav>
         </div>
 
@@ -206,7 +206,7 @@ const Navbar = () => {
                     Corporate
                   </Link>
                     <Link 
-                     href="/Information/corporate"
+                     href="/Information/custom"
                     className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
                   >
                     Custom
@@ -230,10 +230,10 @@ const Navbar = () => {
               <Headphones size={18} />
               <span>Support</span>
             </Link>
-            {/* <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
+            { <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
               <User size={18} />
               <span>Account</span>
-            </Link> */}
+            </Link> }
 
             <div className="relative">
               <button 

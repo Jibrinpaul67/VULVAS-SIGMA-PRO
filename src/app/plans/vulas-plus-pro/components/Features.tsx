@@ -9,11 +9,35 @@ const Features = () => {
         <h2 className="text-lg sm:text-xl text-black">VULAS Enterprise Endpoint Security offers the following solutions:</h2>
       </div>
       
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
         {[
           {
-            title: "APT Threat Hunting",
-            description: "Track, isolate, and neutralize stealthy long-term intrusions."
+            title: "Data Security",
+            description: "Protect and manage data against unauthorized access and breaches."
+          },
+          {
+            title: "Threat Management",
+            description: "Identify, assess, and mitigate potential security threats."
+          },
+          {
+            title: "Link Shielding",
+            description: "Block deceptive links and protect users from malicious redirects."
+
+          },
+          {
+            title: "CEO Fraud Defense",
+            description: "Prevent impersonation scams that target executives and employees."
+
+          },
+          {
+            title: "Fake Wi-Fi Detection",
+            description: "Identify and block rogue access points posing as trusted networks."
+
+          },
+          {
+            title: "DNS Integrity Protection",
+            description: "Stop attackers from rerouting traffic to fake, data-stealing sites."
+
           },
           {
             title: "Remote Monitoring and Control",
@@ -22,10 +46,6 @@ const Features = () => {
           {
             title: "Smart Asset Tracking",
             description: "Identify and manage all connected devices across your environment."
-          },
-          {
-            title: "DDoS Shielding",
-            description: "Block traffic floods and keep services running without interruption."
           },
           {
             title: "Centralized Security Control",

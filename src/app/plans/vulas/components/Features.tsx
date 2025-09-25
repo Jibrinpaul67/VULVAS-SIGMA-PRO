@@ -34,15 +34,18 @@ const Features = () => {
           {
             title: "Identity Protection",
             description: "Protect user identities from being stolen."
-          },
-          {
-            title: "Malware Defense",
-            description: "Guard against harmful software."
-          },
-          {
-            title: "Trojan Defense",
-            description: "Detect and block Trojan malware."
           }
+          ,
+          {
+            title: "Link Shielding",
+            description: "Block deceptive links and protect users from malicious redirects."
+
+          },
+          {
+            title: "CEO Fraud Defense",
+            description: "Prevent impersonation scams that target executives and employees."
+
+          },
         ].map((feature, index) => (
           <div 
             key={index} 

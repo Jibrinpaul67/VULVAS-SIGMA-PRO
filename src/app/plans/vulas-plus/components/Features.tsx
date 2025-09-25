@@ -9,8 +9,32 @@ const Features = () => {
         <h2 className="text-lg sm:text-xl text-black">VULAS Enterprise Internet Security offers the following solutions:</h2>
       </div>
       
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
         {[
+           {
+            title: "Data Security",
+            description: "Protect and manage data against unauthorized access and breaches."
+          },
+          {
+            title: "Threat Management",
+            description: "Identify, assess, and mitigate potential security threats."
+          },
+          {
+            title: "SQL Injection Prevention",
+            description: "Safeguard databases from malicious SQL code insertion."
+          },
+          {
+            title: "Code Injection Prevention",
+            description: "Prevent unauthorized code execution in your applications."
+          },
+          {
+            title: "Software Defense",
+            description: "Detect and remove monitoring software."
+          },
+          {
+            title: "Identity Protection",
+            description: "Protect user identities from being stolen."
+          },
           {
             title: "Link Shielding",
             description: "Block deceptive links and protect users from malicious redirects."
@@ -29,26 +53,6 @@ const Features = () => {
           {
             title: "DNS Integrity Protection",
             description: "Stop attackers from rerouting traffic to fake, data-stealing sites."
-
-          },
-          {
-            title: "Trap Site Defense",
-            description: "Block compromised websites targeting your team’s browsing habits."
-
-          },
-          {
-            title: "Fake Support Scam Protection",
-            description: "Detect and stop phony customer service attacks before they reel you in."
-
-          },
-          {
-            title: "Email Threat Guard",
-            description: "Filter out phishing, spam, and malicious attachments in real time."
-
-          },
-          {
-            title: "Ransomware Lockdown",
-            description: "Detect, isolate, and neutralize ransomware before it encrypts a thing."
 
           }
         ].map((feature, index) => (

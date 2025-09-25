@@ -10,7 +10,6 @@ const Footer = () => {
           <a href="/privacy" className="text-gray-300 hover:text-white text-sm sm:text-base">Privacy Policy</a>
           <a href="#" className="text-gray-300 hover:text-white text-sm sm:text-base">Terms of Service</a>
           <a href="/support" className="text-gray-300 hover:text-white text-sm sm:text-base">Support</a>
-          <a href="#" className="text-gray-300 hover:text-white text-sm sm:text-base">Contact Us</a>
         </nav>
       </div>
       <div className="border-t border-gray-700 mt-4 sm:mt-6 pt-3 sm:pt-4 text-center text-gray-400 text-xs sm:text-sm">
