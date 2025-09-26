@@ -1,4 +1,4 @@
-//import Image from 'next/image';
+import Image from 'next/image';
 
 const SupportChannels = () => {
   return (
@@ -35,31 +35,10 @@ const SupportChannels = () => {
             description: "",
             action: "#contact-form"
           }
-        // ].map((channel, index) => (
-        //   <div key={index} className="bg-gray-50 p-6 rounded-lg">
-        //     <div className="flex items-center mb-4">
-        //       <Image 
-        //         src={channel.icon}
-        //         alt={channel.title}
-        //         width={40}
-        //         height={40}
-        //         className="mr-4"
-        //       />
-        //       <h3 className="font-bold text-xl">{channel.title}</h3>
-        //     </div>
-        //     <p className="text-lg font-semibold mb-2">{channel.method}</p>
-        //     {channel.description && <p className="text-gray-600 mb-4">{channel.description}</p>}
-        //     <a 
-        //       href={channel.action} 
-        //       className="text-[#0500FF] font-medium hover:underline"
-        //     >
-        //       {channel.method}
-        //     </a>
-        //   </div>
-        // ))}
           ].map(({ icon, title, method, description, action }, index) => (
     <div key={index} className="flex items-start gap-4 p-4 border rounded-lg">
-      <img src={icon} alt="" className="w-10 h-10 mt-1" />
+      {/* <img src={icon} alt="" className="w-10 h-10 mt-1" /> */}
+      <Image src={icon} alt="Support" width={40} height={40} />
       <div>
         <h3 className="text-lg font-bold text-black">{title}</h3>
         <p className="text-black font-medium">{method}</p>
