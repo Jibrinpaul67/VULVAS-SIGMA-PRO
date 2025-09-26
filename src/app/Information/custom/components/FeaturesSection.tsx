@@ -6,7 +6,7 @@ const FeaturesSection = () => {
           Key Features and Solutions
         </h2>
         <p className="text-xl text-gray-500">
-          Enjoy Unified Security Solutions for Corporations Against Evolving Cyber Threats with VULAS Plans
+          Enjoy Customizable Unified Security Solutions Against Evolving Cyber Threats with VULAS Plans
           <br />
         </p>
       </div>

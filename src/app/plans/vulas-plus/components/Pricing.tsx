@@ -6,38 +6,58 @@ const Pricing = () => {
           {
             name: "Individual",
             price: "₦35,000",
-            devices: "1-5 Devices per year"
+            devices: "1-5 Devices per year",
+            isCustom: false,
           },
           {
             name: "Enterprise",
             price: "₦72,000",
-            devices: "6-20 Devices per year"
+            devices: "6-20 Devices per year",
+            isCustom: false,
           },
           {
             name: "Institutional",
             price: "₦120,000",
-            devices: "21-50 Devices per year"
+            devices: "21-50 Devices per year",
+            isCustom: false,
           },
           {
             name: "Corporate",
             price: "₦230,000",
-            devices: "51-100 Devices per year"
-          }
-          ,
+            devices: "51-100 Devices per year",
+            isCustom: false,
+          },
           {
             name: "Custom",
-            price: "₦200,000",
-            devices: ">100 Devices per year"
-          }
+            // price: "Contact Support",
+            devices: ">100 Devices per year",
+            isCustom: true,
+          },
         ].map((plan, index) => (
-          <div key={index} className="flex flex-col h-full rounded-lg p-6 text-center">
+          <div
+            key={index}
+            className="flex flex-col h-full rounded-lg p-6 text-center"
+          >
             <div className="flex-grow">
               <h3 className="font-bold text-xl mb-2 text-black">{plan.name}</h3>
-              <p className="text-2xl font-semibold mb-2 text-black">{plan.price}</p>
+
+              {plan.isCustom ? (
+                <a
+                  href="mailto:support@example.com"
+                  className="text-sm font-medium text-blue-600 underline"
+                >
+                  {plan.price}
+                </a>
+              ) : (
+                <p className="text-2xl font-semibold mb-2 text-black">
+                  {plan.price}
+                </p>
+              )}
+
               <p className="text-gray-600 mb-4 font-bold">{plan.devices}</p>
             </div>
             <button className="bg-[#0052B4] text-white font-bold px-6 py-3 rounded-full hover:bg-[#00002A] transition-colors mt-auto">
-              Buy now
+              {plan.isCustom ? "Request Plan" : "Buy now"}
             </button>
           </div>
         ))}

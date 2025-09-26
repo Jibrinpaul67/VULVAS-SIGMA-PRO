@@ -3,7 +3,7 @@ const ComparisonSection = () => {
     <div className="max-w-6xl mx-auto py-12 px-4">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-black mb-4">
-          Enterprise-level privacy, security
+          Custom-level privacy, security
         </h2>
         <p className="text-xl text-gray-500">
           Enjoy Unified Security Solutions Against Evolving Cyber Threats with VULAS Plans
