@@ -118,6 +118,7 @@ const Navbar = () => {
             <span className="text-sm sm:text-base">English</span>
           </div> */}
             <div className="relative hidden md:flex items-center space-x-1 sm:space-x-2">
+              <Globe size={18} />
       <button
         onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
         className="flex items-center hover:text-[#0052B4]"
@@ -256,6 +257,7 @@ const Navbar = () => {
               <span>English</span>
             </div> */}
             <div className="relative hidden md:flex items-center space-x-1 sm:space-x-2">
+              <Globe size={18} />
       <button
         onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
         className="flex items-center hover:text-[#0052B4]"
