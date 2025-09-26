@@ -69,7 +69,7 @@ const ComparisonSection = () => {
               <h3 className="text-2xl font-bold text-[#0052B4]">{product.name}</h3>
               <p className="text-gray-600">{product.for}</p>
                 <div className="flex items-center justify-center mt-2">
-    {Array(5).fill().map((_, i) => (
+   {Array.from({ length: 5 }).map((_, i) => (
       <svg
         key={i}
         className="w-4 h-4 text-yellow-400"
