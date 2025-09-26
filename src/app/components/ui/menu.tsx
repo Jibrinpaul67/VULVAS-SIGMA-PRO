@@ -4,12 +4,15 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu as MenuIcon, Globe, User, Headphones, X, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
+import { useCurrency } from "@/app/plans/CurrencyContext";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isServiceDropdownOpen, setServiceDropdownOpen] = useState(false);
    const [isAccountDropdownOpen, setAccountDropdownOpen] = useState(false);
+    const { currency, setCurrency } = useCurrency();
+  const [isCurrencyDropdownOpen, setCurrencyDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,10 +113,36 @@ const Navbar = () => {
         {/* Right Side: Icons & Links */}
         <div className="flex items-center space-x-2 sm:space-x-6 text-gray-900 font-medium">
           {/* Worldwide - Hidden on smaller screens */}
-          <div className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:text-[#0052B4]">
+          {/* <div className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:text-[#0052B4]">
             <Globe size={16} className="sm:w-5 sm:h-5" />
             <span className="text-sm sm:text-base">English</span>
-          </div>
+          </div> */}
+            <div className="relative hidden md:flex items-center space-x-1 sm:space-x-2">
+      <button
+        onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
+        className="flex items-center hover:text-[#0052B4]"
+      >
+        {currency}
+        {isCurrencyDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+      </button>
+
+      {isCurrencyDropdownOpen && (
+        <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
+          {["NGN", "USD", "GBP", "EUR"].map((cur) => (
+            <button
+              key={cur}
+              onClick={() => {
+                setCurrency(cur as any);
+                setCurrencyDropdownOpen(false);
+              }}
+              className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+            >
+              {cur}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
 
           {/* Support - Hidden on smaller screens */}
           <Link href="/support" className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]">
@@ -222,10 +251,36 @@ const Navbar = () => {
             <Link href="/Information/newsletter" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Newsletter</Link>
             
             {/* Mobile-only menu items */}
-            <div className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
+            {/* <div className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
               <Globe size={18} />
               <span>English</span>
-            </div>
+            </div> */}
+            <div className="relative hidden md:flex items-center space-x-1 sm:space-x-2">
+      <button
+        onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
+        className="flex items-center hover:text-[#0052B4]"
+      >
+        {currency}
+        {isCurrencyDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+      </button>
+
+      {isCurrencyDropdownOpen && (
+        <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
+          {["NGN", "USD", "GBP", "EUR"].map((cur) => (
+            <button
+              key={cur}
+              onClick={() => {
+                setCurrency(cur as any);
+                setCurrencyDropdownOpen(false);
+              }}
+              className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+            >
+              {cur}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
             <Link href="/support" className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
               <Headphones size={18} />
               <span>Support</span>
