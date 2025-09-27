@@ -7,6 +7,7 @@ const exchangeRates: Record<string, number> = {
   USD: 0.00065,
   GBP: 0.00052,
   EUR: 0.00060,
+  ZAR:  0.012 ,
 };
 
 const currencySymbols: Record<string, string> = {
@@ -14,6 +15,7 @@ const currencySymbols: Record<string, string> = {
   USD: "$",
   GBP: "£",
   EUR: "€",
+  ZAR: "R"
 };
 
 const formatCurrency = (amount: number, currency: string) => {

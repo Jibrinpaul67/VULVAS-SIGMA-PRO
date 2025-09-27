@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, ReactNode } from "react";
 
-type Currency = "NGN" | "USD" | "GBP" | "EUR";
+type Currency = "NGN" | "USD" | "GBP" | "EUR"| "ZAR";
 
 interface CurrencyContextType {
   currency: Currency;

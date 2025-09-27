@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Menu as MenuIcon, Globe, User, Headphones, X, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import { useCurrency } from "@/app/plans/CurrencyContext";
-type Currency = "NGN" | "USD" | "GBP" | "EUR";
+type Currency = "NGN" | "USD" | "GBP" | "EUR" | "ZAR";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -130,7 +130,7 @@ const Navbar = () => {
 
       {isCurrencyDropdownOpen && (
         <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
-          {["NGN", "USD", "GBP", "EUR"].map((cur) => (
+          {["NGN", "USD", "GBP", "EUR", "ZAR"].map((cur) => (
             <button
               key={cur}
               onClick={() => {
@@ -269,7 +269,7 @@ const Navbar = () => {
 
       {isCurrencyDropdownOpen && (
         <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
-          {["NGN", "USD", "GBP", "EUR"].map((cur) => (
+          {["NGN", "USD", "GBP", "EUR", "ZAR"].map((cur) => (
             <button
               key={cur}
               onClick={() => {
