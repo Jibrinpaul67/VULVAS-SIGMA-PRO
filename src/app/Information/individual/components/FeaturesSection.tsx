@@ -15,29 +15,29 @@ const FeaturesSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {
-            title: "Endpoint security",
-            description: "Safeguard student and staff devices with real-time protection."
+            title: "Data Security",
+            description: "Protects personal and business data from leaks or theft. Critical for freelancers or home offices handling client details."
           },
           {
-            title: "Network security",
-            description: "Shield against external threats with robust intrusion detection and prevention"
+            title: "Sufficient Antivirus",
+            description: "Blocks common viruses and malware so devices don’t crash in the middle of Zoom calls."
           },
           {
-            title: "Passwords and Encryption Security",
-            description: "Prevent unauthorized access to and sharing of sensitive institutional data"
+            title: "Adware Defense",
+            description: "Stops annoying ads that slow down systems and compromise privacy."
           },
           {
-            title: "Identity and Access Management (IAM)",
-            description: "Secure access for staff, students, and administrators with role-based access controls"
+            title: "Identity Theft Protection",
+            description: "Prevents hackers from stealing online banking or personal details."
           },
           {
-            title: "Cloud Security",
-            description: "Protect data stored in and accessed from cloud services"
+            title: "Spyware Defense",
+            description: "Detects hidden programs silently tracking user activity."
           },
           {
-            title: "Pharming Prevention",
-            description: "Secure learning management systems (LMS) and student records"
-          }
+            title: "SQL Injection Prevention",
+            description: "Protects Database from being hijacked when running small online shops and websites."}
+
         ].map((feature, index) => (
           <div 
             key={index} 

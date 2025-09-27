@@ -10,9 +10,9 @@ type Currency = "NGN" | "USD" | "GBP" | "EUR" | "ZAR";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isServiceDropdownOpen, setServiceDropdownOpen] = useState(false);
-   const [isAccountDropdownOpen, setAccountDropdownOpen] = useState(false);
-    const { currency, setCurrency } = useCurrency();
+  const [isServiceDropdownOpen, setServiceDropdownOpen] = useState(false);
+  const [isAccountDropdownOpen, setAccountDropdownOpen] = useState(false);
+  const { currency, setCurrency } = useCurrency();
   const [isCurrencyDropdownOpen, setCurrencyDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -28,13 +28,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-    const toggleServiceDropdown = () => {
+  const toggleServiceDropdown = () => {
     setServiceDropdownOpen(!isServiceDropdownOpen);
   };
 
-   const toggleAccountDropdown = () => {
+  const toggleAccountDropdown = () => {
     setAccountDropdownOpen(!isAccountDropdownOpen);
   };
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 h-20 transition-all duration-300 
@@ -56,8 +57,7 @@ const Navbar = () => {
           </Link>
           
           <nav className="hidden lg:flex space-x-3 xl:space-x-6 text-gray-900 font-medium text-sm xl:text-base">
-
-                {/* Service Dropdown */}
+            {/* Service Dropdown */}
             <div className="relative">
               <button 
                 onClick={toggleServiceDropdown}
@@ -69,36 +69,11 @@ const Navbar = () => {
               
               {isServiceDropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
-                  <Link 
-                  href="/Information/individual"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                    Individual
-                  </Link>
-                  <Link 
-                  href="/Information/institution"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                    Institution
-                  </Link>
-                  <Link 
-                    href="/Information/enterprise"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                    Enterprise
-                  </Link>
-                  <Link 
-                  href="/Information/corporate"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                  Corporate
-                  </Link>
-                    <Link 
-                    href="/Information/custom"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] "
-                  >
-                  Custom
-                  </Link>
+                  <Link href="/Information/individual" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]">Individual</Link>
+                  <Link href="/Information/institution" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]">Institution</Link>
+                  <Link href="/Information/enterprise" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]">Enterprise</Link>
+                  <Link href="/Information/corporate" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]">Corporate</Link>
+                  <Link href="/Information/custom" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]">Custom</Link>
                 </div>
               )}
             </div>
@@ -111,81 +86,73 @@ const Navbar = () => {
           </nav>
         </div>
 
-        {/* Right Side: Icons & Links */}
+        {/* Right Side */}
         <div className="flex items-center space-x-2 sm:space-x-6 text-gray-900 font-medium">
-          {/* Worldwide - Hidden on smaller screens */}
-          {/* <div className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:text-[#0052B4]">
-            <Globe size={16} className="sm:w-5 sm:h-5" />
-            <span className="text-sm sm:text-base">English</span>
-          </div> */}
-            <div className="relative hidden md:flex items-center space-x-1 sm:space-x-2">
-              <Globe size={18} />
-      <button
-        onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
-        className="flex items-center hover:text-[#0052B4]"
-      >
-        {currency}
-        {isCurrencyDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-      </button>
-
-      {isCurrencyDropdownOpen && (
-        <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
-          {["NGN", "USD", "GBP", "EUR", "ZAR"].map((cur) => (
+          {/* Currency Dropdown */}
+          <div className="relative hidden md:flex items-center space-x-1 sm:space-x-2">
+            <Globe size={18} />
             <button
-              key={cur}
-              onClick={() => {
-                setCurrency(cur as Currency);
-                setCurrencyDropdownOpen(false);
-              }}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+              onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
+              className="flex items-center hover:text-[#0052B4]"
             >
-              {cur}
+              {currency}
+              {isCurrencyDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             </button>
-          ))}
-        </div>
-      )}
-    </div>
 
-          {/* Support - Hidden on smaller screens */}
-          <Link href="/support" className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]">
+            {isCurrencyDropdownOpen && (
+              <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
+                {["NGN", "USD", "GBP", "EUR", "ZAR"].map((cur) => (
+                  <button
+                    key={cur}
+                    onClick={() => {
+                      setCurrency(cur as Currency);
+                      setCurrencyDropdownOpen(false);
+                    }}
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                  >
+                    {cur}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Support */}
+          <Link href="/support" className=" hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]">
             <Headphones size={16} className="sm:w-5 sm:h-5" />
             <span className="text-sm sm:text-base">Support</span>
           </Link>
 
-          {/* Account - Hidden on smaller screens
-          <Link href="/account" className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]">
-            <User size={16} className="sm:w-5 sm:h-5" />
-            <span className="text-sm sm:text-base">Account</span>
-          </Link> */}
+          {/* Account with sky-blue bar */}
+           <div className=" relative -top-6 h-20 flex items-center bg-sky-500 px-4">
+            <button 
+              onClick={toggleAccountDropdown}
+              className="hidden md:flex items-center space-x-1 sm:space-x-2 text-white"
+            >
+              <User size={16} className="sm:w-5 sm:h-5 text-white" />
+              Account
+              {isAccountDropdownOpen ? <ChevronUp size={16} className="ml-1 text-white" /> : <ChevronDown size={16} className="ml-1 text-white" />}
+            </button>
+            
+            {isAccountDropdownOpen && (
+              <div className="absolute left-0 mt-20 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
+                <Link 
+                  href="/account/login"
+                  className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
+                >
+                  Log In
+                </Link>
+                <Link 
+                  href="/account/signup"
+                  className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
+                >
+                  Sign Up
+                </Link>
+              </div>
+            )}
+          </div>
 
-     <div className="relative">
-              <button 
-                onClick={toggleAccountDropdown}
-                className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]"
-              >
-                <User size={16} className="sm:w-5 sm:h-5" />
-                Account
-                {isAccountDropdownOpen ? <ChevronUp size={16} className="ml-1" /> : <ChevronDown size={16} className="ml-1" />}
-              </button>
-              
-              {isAccountDropdownOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
-               
-                    <Link 
-                     href="/account/login"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
-                   Log In
-                  </Link>
-                  <Link 
-                     href="/account/signup"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
-                   Sign Up
-                  </Link>
-                </div>
-              )}
-            </div>
-
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle */}
           <button 
             className="lg:hidden p-1 rounded-md hover:bg-gray-100" 
             onClick={toggleMenu}
@@ -200,7 +167,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <div className="flex flex-col p-4 space-y-3">
-                        {/* Mobile Service Dropdown */}
+            {/* Service Dropdown */}
             <div className="relative">
               <button 
                 onClick={() => setServiceDropdownOpen(!isServiceDropdownOpen)}
@@ -212,36 +179,11 @@ const Navbar = () => {
               
               {isServiceDropdownOpen && (
                 <div className="pl-4 mt-1 space-y-2">
-                  <Link 
-                   href="/Information/individual"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]"
-                  >
-                    Individual
-                  </Link>
-                  <Link 
-                   href="/Information/institution" 
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
-                  >
-                    Institution
-                  </Link>
-                  <Link 
-                   href="/Information/enterprise"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
-                  >
-                    Enterprise
-                  </Link>
-                  <Link 
-                     href="/Information/corporate"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
-                  >
-                    Corporate
-                  </Link>
-                    <Link 
-                     href="/Information/custom"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
-                  >
-                    Custom
-                  </Link>
+                  <Link href="/Information/individual" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0052B4]">Individual</Link>
+                  <Link href="/Information/institution" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black">Institution</Link>
+                  <Link href="/Information/enterprise" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black">Enterprise</Link>
+                  <Link href="/Information/corporate" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black">Corporate</Link>
+                  <Link href="/Information/custom" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black">Custom</Link>
                 </div>
               )}
             </div>
@@ -252,75 +194,11 @@ const Navbar = () => {
             <Link href="/about" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">About Us</Link>
             <Link href="/Information/newsletter" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Newsletter</Link>
             
-            {/* Mobile-only menu items */}
-            {/* <div className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
-              <Globe size={18} />
-              <span>English</span>
-            </div> */}
-            <div className="relative hidden md:flex items-center space-x-1 sm:space-x-2">
-              <Globe size={18} />
-      <button
-        onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
-        className="flex items-center hover:text-[#0052B4]"
-      >
-        {currency}
-        {isCurrencyDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-      </button>
-
-      {isCurrencyDropdownOpen && (
-        <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
-          {["NGN", "USD", "GBP", "EUR", "ZAR"].map((cur) => (
-            <button
-              key={cur}
-              onClick={() => {
-                setCurrency(cur as Currency);
-                setCurrencyDropdownOpen(false);
-              }}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100"
-            >
-              {cur}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-            <Link href="/support" className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
-              <Headphones size={18} />
-              <span>Support</span>
-            </Link>
-            { <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 hover:text-[#0052B4] text-black">
+            {/* Mobile Account with sky-blue bar */}
+            <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 border-2 border-sky-400 rounded-md hover:text-[#0052B4] text-black">
               <User size={18} />
               <span>Account</span>
-            </Link> }
-
-            <div className="relative">
-              <button 
-                onClick={toggleAccountDropdown}
-                className="hidden md:flex items-center space-x-1 sm:space-x-2 hover:underline hover:text-[#0052B4]"
-              >
-                <User size={16} className="sm:w-5 sm:h-5" />
-                Account
-                {isAccountDropdownOpen ? <ChevronUp size={16} className="ml-1" /> : <ChevronDown size={16} className="ml-1" />}
-              </button>
-              
-              {isAccountDropdownOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
-               
-                    <Link 
-                     href="/account/login"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
-                   Log In
-                  </Link>
-                  <Link 
-                     href="/account/signup"
-                    className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] ">
-                   Sign Up
-                  </Link>
-                </div>
-              )}
-            </div>
-
-
+            </Link>
           </div>
         </div>
       )}

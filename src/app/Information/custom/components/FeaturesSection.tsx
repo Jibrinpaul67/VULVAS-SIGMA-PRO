@@ -14,24 +14,24 @@ const FeaturesSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
          {
-    title: "Advanced Endpoint Detection and Response",
-    description: "Real-time threat monitoring and automated response to secure employee devices across global operations."
+    title: "Unified Management",
+    description: "Centralized dashboard to control thousands of users and devices."
   },
   {
-    title: "Enterprise Network Security",
-    description: "Defend against sophisticated cyber threats with layered firewall systems, intrusion detection, and network segmentation."
+    title: "Dedicated Support",
+    description: "On-call cybersecurity experts for rapid response."
   },
   {
     title: "Cloud Security and Compliance",
     description: "Ensure secure cloud operations with data encryption, continuous monitoring, and adherence to global compliance standards."
   },
   {
-    title: "Identity and Access Management",
-    description: "Enforce secure and seamless access using multi-factor authentication, SSO, and role-based privilege controls at scale."
+    title: "Custom Threat Intelligence Integration",
+    description: "ersonalized monitoring for industry specific attacks."
   },
   {
-    title: "Data Loss Prevention",
-    description: "Protect sensitive corporate information from accidental leaks or intentional breaches with robust DLP policies and endpoint enforcement."
+    title: "Regulatory Compliance Management",
+    description: "Built in checks for GDPR, HIPAA, regional and international data laws."
   },
   {
     title: "Security Information and Event Management",

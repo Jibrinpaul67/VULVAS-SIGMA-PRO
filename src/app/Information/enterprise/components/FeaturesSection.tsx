@@ -15,8 +15,8 @@ const FeaturesSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {
-            title: "Endpoint security",
-            description: "Protect employee devices with real-time threat detection and response."
+            title: "Anti Ransomware",
+            description: "Stops attackers from locking business data and demanding payment."
           },
           {
             title: "Network security",
@@ -35,8 +35,8 @@ const FeaturesSection = () => {
            description: "Protect sensitive business data across cloud platforms with encryption and threat monitoring"
           },
           {
-            title: "Pharming Prevention",
-              description: "Safeguard internal systems, customer data, and business portals from redirection attacks and DNS hijacking"
+            title: "Smishing Prevention",
+              description: "Defends against SMS-based scams targeting staff phones."
           }
         ].map((feature, index) => (
           <div 

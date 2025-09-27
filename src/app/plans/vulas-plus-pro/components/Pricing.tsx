@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCurrency } from "@/app/plans/CurrencyContext";
 
 const exchangeRates: Record<string, number> = {
@@ -7,7 +8,7 @@ const exchangeRates: Record<string, number> = {
   USD: 0.00065,
   GBP: 0.00052,
   EUR: 0.00060,
-  ZAR:  0.012 ,
+  ZAR: 0.012,
 };
 
 const currencySymbols: Record<string, string> = {
@@ -15,7 +16,7 @@ const currencySymbols: Record<string, string> = {
   USD: "$",
   GBP: "£",
   EUR: "€",
-  ZAR: "R"
+  ZAR: "R",
 };
 
 const formatCurrency = (amount: number, currency: string) => {
@@ -24,7 +25,6 @@ const formatCurrency = (amount: number, currency: string) => {
     maximumFractionDigits: 0,
   })}`;
 };
-
 
 const Pricing = () => {
   const { currency } = useCurrency();
@@ -63,9 +63,13 @@ const Pricing = () => {
 
               <p className="text-gray-600 mb-4 font-bold">{plan.devices}</p>
             </div>
-            <button className="bg-[#0052B4] text-white font-bold px-6 py-3 rounded-full hover:bg-[#00002A] transition-colors mt-auto">
-              {plan.isCustom ? "Request Plan" : "Buy now"}
-            </button>
+
+            {/* ✅ Button now links to productPlans page */}
+            <Link href="/plans/productPlans" passHref>
+              <button className="bg-[#0052B4] text-white font-bold px-6 py-3 rounded-full hover:bg-[#00002A] transition-colors mt-auto w-full">
+                {plan.isCustom ? "Request Plan" : "Buy now"}
+              </button>
+            </Link>
           </div>
         ))}
       </div>
@@ -74,5 +78,3 @@ const Pricing = () => {
 };
 
 export default Pricing;
-
-

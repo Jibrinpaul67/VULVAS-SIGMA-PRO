@@ -18,7 +18,7 @@ const FeaturesSection = () => {
     description: "Real-time threat monitoring and automated response to secure employee devices across global operations."
   },
   {
-    title: "Enterprise Network Security",
+    title: "Advanced Persistent Threat Management",
     description: "Defend against sophisticated cyber threats with layered firewall systems, intrusion detection, and network segmentation."
   },
   {
@@ -26,8 +26,8 @@ const FeaturesSection = () => {
     description: "Ensure secure cloud operations with data encryption, continuous monitoring, and adherence to global compliance standards."
   },
   {
-    title: "Identity and Access Management",
-    description: "Enforce secure and seamless access using multi-factor authentication, SSO, and role-based privilege controls at scale."
+    title: "Vulnerability Scanning",
+    description: "Continuously checks systems for weaknesses before hackers find them."
   },
   {
     title: "Data Loss Prevention",
