@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import SquareCard from './squarecard';
 import Button from './button';
+import Link from "next/link";
 
 const HomePage2 = () => {
   return (
@@ -55,11 +56,12 @@ const HomePage2 = () => {
         <Button className="px-6 sm:px-8 py-3 sm:py-4 bg-[#0052B4] hover:bg-[#003D8F]">
           Download Free Trial
         </Button>
-        <button
-          className={`px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#0052B4] border-2 border-[#0052B4] rounded-md hover:bg-[#F5F9FF] transition-colors duration-200`}
-        >
-          Learn More
-        </button>
+       <Link
+      href="/plans/productPlans"
+      className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#0052B4] border-2 border-[#0052B4] rounded-md hover:bg-[#F5F9FF] transition-colors duration-200 inline-block"
+    >
+      Learn More
+    </Link>
       </div>
     </div>
   );
