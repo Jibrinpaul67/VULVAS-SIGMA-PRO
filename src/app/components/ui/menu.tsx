@@ -201,59 +201,37 @@ const Navbar = () => {
               <span>Account</span>
             </Link> */}
 
-             {/* Account dropdown */}
-          <div className="relative -top-6 h-20 flex items-center px-4">
-  <button 
-    onClick={toggleAccountDropdown}
-    className="hidden md:flex items-center space-x-1 sm:space-x-2 text-black"
-  >
-    <User size={16} className="sm:w-5 sm:h-5 text-black" />
-    Account
-    {isAccountDropdownOpen ? (
-      <ChevronUp size={16} className="ml-1 text-black" />
-    ) : (
-      <ChevronDown size={16} className="ml-1 text-black" />
-    )}
-  </button>
-  
-  {isAccountDropdownOpen && (
-    <div className="absolute left-0 mt-20 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
-      <Link 
-        href="/account/login"
-        className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
+            
+<div className="relative">
+      <button
+        onClick={toggleAccountDropdown}
+        className="flex items-center justify-between w-full py-2 px-3 rounded-md hover:bg-gray-100 hover:text-[#0052B4] text-black"
       >
-        Log In
-      </Link>
-      <Link 
-        href="/account/signup"
-        className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
-      >
-        Sign Up
-      </Link>
-    </div>
-  )}
-</div>
-              
+        <div className="flex items-center space-x-2">
+          <User size={18} />
+          <span>Account</span>
+        </div>
+        {isAccountDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+      </button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      {isAccountDropdownOpen && (
+        <div className="pl-4 mt-1 space-y-2">
+          <Link
+            href="/account/login"
+            className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
+          >
+            Log In
+          </Link>
+          <Link
+            href="/account/signup"
+            className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black"
+          >
+            Sign Up
+          </Link>
+        </div>
+         )}
+         </div>
+         
 
 
 
