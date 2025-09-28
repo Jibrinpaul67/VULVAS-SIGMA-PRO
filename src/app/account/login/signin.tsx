@@ -49,7 +49,7 @@ const Signin = () => {
             </button>
           </div>
           <div className="mt-2 text-right">
-            <a href="#" className="text-sm text-blue-600 hover:underline">
+            <a href="./forgotpassword" className="text-sm text-blue-600 hover:underline">
               Forgot password?
             </a>
           </div>
