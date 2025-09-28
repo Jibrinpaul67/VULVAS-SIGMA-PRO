@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-1 sm:space-x-2 text-gray-900 hover:text-[#0052B4]">
             <Globe size={16} className="sm:w-5 sm:h-5" />
             <span className="text-sm sm:text-base">English</span>
-          </div> 
+          </div>  
 
           {/* Support - Hidden on smaller screens */}
           <Link href="/support" className="hidden md:flex items-center space-x-1 sm:space-x-2 text-gray-900 hover:underline hover:text-[#0052B4]">

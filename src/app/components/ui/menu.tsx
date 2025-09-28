@@ -204,7 +204,7 @@ const Navbar = () => {
             
 <div className="relative">
       <button
-        onClick={toggleAccountDropdown}
+        onClick={() => setAccountDropdownOpen(!isAccountDropdownOpen)}
         className="flex items-center justify-between w-full py-2 px-3 rounded-md hover:bg-gray-100 hover:text-[#0052B4] text-black"
       >
         <div className="flex items-center space-x-2">
