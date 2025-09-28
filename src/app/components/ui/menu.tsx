@@ -83,6 +83,7 @@ const Navbar = () => {
             <Link href="/Information/partners" className="hover:underline hover:text-[#0052B4]">Partners</Link>
             <Link href="/about" className="hover:underline hover:text-[#0052B4]">About Us</Link>
             <Link href="/Information/newsletter" className="hover:underline hover:text-[#0052B4]">Newsletter</Link> 
+       
           </nav>
         </div>
 
@@ -195,7 +196,7 @@ const Navbar = () => {
             <Link href="/Information/newsletter" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Newsletter</Link>
             
             {/* Mobile Account with sky-blue bar */}
-            <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 border-2 border-sky-400 rounded-md hover:text-[#0052B4] text-black">
+            <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 rounded-md hover:text-[#0052B4] text-black">
               <User size={18} />
               <span>Account</span>
             </Link>

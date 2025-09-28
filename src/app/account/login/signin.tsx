@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import Link from "next/link";
 
 const Signin = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -55,12 +56,13 @@ const Signin = () => {
         </div>
 
         {/* Submit button */}
-        <button
-          type="submit"
-          className="w-full bg-[#0052B4] text-white py-3 rounded-lg font-bold hover:bg-[#00002A] transition-colors"
-        >
-          Sign In
-        </button>
+       <button
+  className="w-full bg-[#0052B4] text-white py-3 rounded-lg font-bold hover:bg-[#00002A] transition-colors"
+>
+  <Link href="./dashboard" className="block w-full h-full text-center">
+    Sign In
+  </Link>
+</button>
       </form>
     </div>
   );
