@@ -202,33 +202,38 @@ const Navbar = () => {
             </Link> */}
 
              {/* Account dropdown */}
-           <div className=" relative -top-6 h-20 flex items-center bg-[#0500FF] px-4">
-            <button 
-              onClick={toggleAccountDropdown}
-              className="hidden md:flex items-center space-x-1 sm:space-x-2 text-white"
-            >
-              <User size={16} className="sm:w-5 sm:h-5 text-white" />
-              Account
-              {isAccountDropdownOpen ? <ChevronUp size={16} className="ml-1 text-white" /> : <ChevronDown size={16} className="ml-1 text-white" />}
-            </button>
-            
-            {isAccountDropdownOpen && (
-              <div className="absolute left-0 mt-20 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
-                <Link 
-                  href="/account/login"
-                  className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
-                >
-                  Log In
-                </Link>
-                <Link 
-                  href="/account/signup"
-                  className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
-                >
-                  Sign Up
-                </Link>
-              </div>
-            )}
-          </div>
+          <div className="relative -top-6 h-20 flex items-center px-4">
+  <button 
+    onClick={toggleAccountDropdown}
+    className="hidden md:flex items-center space-x-1 sm:space-x-2 text-black"
+  >
+    <User size={16} className="sm:w-5 sm:h-5 text-black" />
+    Account
+    {isAccountDropdownOpen ? (
+      <ChevronUp size={16} className="ml-1 text-black" />
+    ) : (
+      <ChevronDown size={16} className="ml-1 text-black" />
+    )}
+  </button>
+  
+  {isAccountDropdownOpen && (
+    <div className="absolute left-0 mt-20 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
+      <Link 
+        href="/account/login"
+        className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
+      >
+        Log In
+      </Link>
+      <Link 
+        href="/account/signup"
+        className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
+      >
+        Sign Up
+      </Link>
+    </div>
+  )}
+</div>
+              
 
 
 
