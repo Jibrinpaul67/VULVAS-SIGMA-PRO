@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -11,12 +12,13 @@ const HeroSection = () => {
         <p className="text-xl text-white/90 mb-6">
           Tailored, scalable, and AI-driven security for educational and professional institutions
         </p>
+         <Link href="#features">
         <button 
           className="bg-white text-[#0052B4] px-6 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 font-medium text-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0052B4]"
         >
           Explore Solutions
         </button>
-      
+      </Link>
       </div>
       <div className="md:w-1/2">
         <Image 

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -11,6 +12,7 @@ const HeroSection = () => {
         <p className="text-xl text-white/90 mb-6">
           Experience next-level protection with VULAS Plans
         </p>
+         <Link href="#features">
         <button
           className="bg-white text-[#0052B4] px-6 py-3 rounded-full hover:bg-gray-100 
                      transition-colors duration-300 font-medium text-lg
@@ -18,6 +20,7 @@ const HeroSection = () => {
         >
           Explore Enterprise
         </button>
+        </Link>
       </div>
       <div className="md:w-1/2">
         <Image 

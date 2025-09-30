@@ -10,7 +10,8 @@ const ComparisonSection = () => {
         </p>
       </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {
             name: "VULAS Sigma",
@@ -37,11 +38,14 @@ const ComparisonSection = () => {
               "Anti-Ransomware",
               "Email Security",
               "Antivirus",
+              "Spyware Defense",
               "Cloud Security Spear Phishing",
               "Link Manipulation Prevention",
               "CEO Fraud Prevention",
               "Smishing Prevention",
-              "Evil Twin* Wi-Fi Prevention"
+              "Evil Twin* Wi-Fi Prevention",
+              "Angler phishing Prevention",
+                
             ]
           },
           {
@@ -51,15 +55,19 @@ const ComparisonSection = () => {
             system: "Windows | macOS | Android | IOS",
             features: [
               "Vulnerability Scanning",
-              "Application Control",
-              "Device Control",
-              "Business Security",
-              "Endpoint security",
-              "Sniffing Prevention",
-              "DDoS Attack Prevention",
-              "Man-in-the-middle Attack Prevention"
-            ]
-          }
+"Application Control",
+"Business Security",
+"Security Information and Event Management",
+"Man-in-the-middle Attack Prevention",
+"Unified Management",
+"DDoS Attack Prevention",
+"Asset Management",
+"Angler phishing Prevention",
+ " Watering hole Prevention",
+"Remote Monitoring and Management",
+"Advanced Persistent Threat Management"
+
+           ] }
         ].map((product, index) => (
           <div 
             key={index} 

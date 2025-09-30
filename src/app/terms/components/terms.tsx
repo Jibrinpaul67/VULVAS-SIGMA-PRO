@@ -5,7 +5,7 @@ const Terms = () => {
 
   {/* Section 1 */}
   <h2 className="text-xl font-bold text-black mb-4">
-  ACCEPTANCE OF THE AGREEMENT
+Acceptance of the Agreement
   </h2>
   <p className="text-base sm:text-lg text-gray-600 mb-10">
    You must be of legal age to enter into a binding agreement in order to accept the Agreement. 
@@ -19,7 +19,7 @@ const Terms = () => {
 
   {/* Section 2 */}
   <h2 className="text-xl font-bold text-black mb-4">
-   DESCRIPTION OF THE SERVICE
+   Description of the Service
   </h2>
   <p className="text-base sm:text-lg text-gray-600 mb-4">
    VULAS Security provides an AI-powered cybersecurity solution designed to protect networking devices, servers,
@@ -37,7 +37,7 @@ VULAS combines multiple layers of protection including Wi-Fi security, ransomwar
   </p>
 
   {/* Section 3 */}
-  <h2 className="text-xl font-bold text-black mb-4">FREE TRIAL</h2>
+  <h2 className="text-xl font-bold text-black mb-4">Free Trial</h2>
 <p className="text-base sm:text-lg text-gray-600 mb-4">
   If you register for a free trial of one or more VULAS Services, VULAS will make the applicable Services
   available to you on a trial basis free of charge until the earliest of:
@@ -64,7 +64,7 @@ VULAS combines multiple layers of protection including Wi-Fi security, ransomwar
 
 {/* Section 4 */}
 <h2 className="text-xl font-bold text-black mb-4">
- INACTIVE USER ACCOUNT POLICY
+ Inactive User Account Policy
 </h2>
 <p className="text-base sm:text-lg text-gray-600 mb-4">
 We reserve the right to terminate unpaid user accounts that are inactive for a continuous period of 120 days. In the event of such termination,
@@ -76,7 +76,7 @@ We reserve the right to terminate unpaid user accounts that are inactive for a c
 </p>
 
 {/* Section 5 */}
-<h2 className="text-xl font-bold text-black mb-4">FEES AND PAYMENTS</h2>
+<h2 className="text-xl font-bold text-black mb-4">Fees and Payments</h2>
 <p className="text-base sm:text-lg text-gray-600 mb-6">
   Paid Subscriptions are available under subscription plans of various durations. Your subscription will be automatically renewed at the end 
   of each subscription period unless you inform us that you do not wish to renew the subscription.
@@ -102,7 +102,7 @@ We reserve the right to terminate unpaid user accounts that are inactive for a c
 
 
 {/* Section 6 */}
-<h2 className="text-xl font-bold text-black mb-4">COMMUNICATIONS FROM VULAS Security</h2>
+<h2 className="text-xl font-bold text-black mb-4">Communications from VULAS Security</h2>
 <p className="text-base sm:text-lg text-gray-600 mb-10">
   The Service may include certain communications from VULAS, such as service announcements, 
   administrative messages and newsletters. You understand that these communications shall be considered part of using the Services.
@@ -111,7 +111,7 @@ We reserve the right to terminate unpaid user accounts that are inactive for a c
 </p>
 
 {/* Section 7 */}
-<h2 className="text-xl font-bold text-black mb-4">MODIFICATION OF TERMS</h2>
+<h2 className="text-xl font-bold text-black mb-4">Modification of Terms</h2>
 <p className="text-base sm:text-lg text-gray-600 mb-10">
   We may modify this Agreement upon notice to you at any time. You will be provided notice of any such modification by
    electronic mail or by publishing the changes on the website <a href="https://www.vulas.com/terms" className="text-blue-600"> www.vulas.com/termsOfService</a>.
@@ -122,7 +122,7 @@ We reserve the right to terminate unpaid user accounts that are inactive for a c
 
 {/* Section 8*/}
 <h2 className="text-xl font-bold text-black mb-4">
-DATA OWNERSHIP
+Data Ownership
 </h2>
 <p className="text-base sm:text-lg text-gray-600 mb-10">
 We respect your right to ownership of your user account data. You own the content created or stored by you. Unless specifically
@@ -134,7 +134,7 @@ We respect your right to ownership of your user account data. You own the conten
 
 {/* Section 9*/}
 <h2 className="text-xl font-bold text-black mb-4">
-DISCLAIMER OF WARRANTIES
+Disclaimer of Warranties
 </h2>
 <p className="text-base sm:text-lg text-gray-600 mb-10">
 You expressly understand and agree that the use of the Services is at your sole risk. The Services are provided on an “as-is” and
@@ -147,7 +147,7 @@ No advice or information, whether written or oral, obtained by you from VULAS, i
 any warranty not expressly stated in this Agreement.</p>
 
 {/* Section 10*/}
-<h2 className="text-xl font-bold text-black mb-4">LIMITATION OF LIABILITIES</h2>
+<h2 className="text-xl font-bold text-black mb-4">Limitation of Liability</h2>
 <p className="text-base sm:text-lg text-gray-600 mb-4">
   You agree that VULAS shall in no event be liable for any consequential, incidental, indirect, special,
   punitive, or other loss or damage whatsoever, including but not limited to loss of business profits, business
@@ -165,7 +165,7 @@ any warranty not expressly stated in this Agreement.</p>
 
  {/* Section 11*/}
 <h2 className="text-xl font-bold text-black mb-4">
-SUSPENSION AND TERMINATION OF USER ACCOUNT
+Suspension and Termination of User Account
 </h2>
 <p className="text-base sm:text-lg text-gray-600 mb-4">
 We may suspend your user account or temporarily disable access to whole or part of any Service in the event of any suspected illegal 
@@ -183,7 +183,7 @@ activity, extended periods of inactivity or requests by law enforcement or other
 
  {/* Section 12*/}
 <h2 className="text-xl font-bold text-black mb-4">
-END OF TERMS OF SERVICE
+End of Terms of Service
 </h2>
 <p className="text-base sm:text-lg text-gray-600 mb-4">
 If you have any questions or concerns regarding this agreement, please contact us at <a href="mailto:privacy@vulas.com" className="text-blue-600">legal@vulas.com</a>.

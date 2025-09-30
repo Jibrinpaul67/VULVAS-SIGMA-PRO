@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Menu as MenuIcon, Globe, User, Headphones, X, ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import { useCurrency } from "@/app/plans/CurrencyContext";
+
 type Currency = "NGN" | "USD" | "GBP" | "EUR" | "ZAR";
 
 const Navbar = () => {
@@ -24,16 +25,17 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleServiceDropdown = () => setServiceDropdownOpen(!isServiceDropdownOpen);
+  const toggleAccountDropdown = () => setAccountDropdownOpen(!isAccountDropdownOpen);
 
-  const toggleServiceDropdown = () => {
-    setServiceDropdownOpen(!isServiceDropdownOpen);
-  };
-
-  const toggleAccountDropdown = () => {
-    setAccountDropdownOpen(!isAccountDropdownOpen);
+  // ✅ Currency labels
+  const currencyLabels: Record<Currency, string> = {
+    NGN: "NGN – Nigerian Naira",
+    USD: "USD – US Dollar",
+    GBP: "GBP – British Pound",
+    EUR: "EUR – Euro",
+    ZAR: "ZAR – South African Rand",
   };
 
   return (
@@ -83,7 +85,6 @@ const Navbar = () => {
             <Link href="/Information/partners" className="hover:underline hover:text-[#0052B4]">Partners</Link>
             <Link href="/about" className="hover:underline hover:text-[#0052B4]">About Us</Link>
             <Link href="/Information/newsletter" className="hover:underline hover:text-[#0052B4]">Newsletter</Link> 
-       
           </nav>
         </div>
 
@@ -96,13 +97,13 @@ const Navbar = () => {
               onClick={() => setCurrencyDropdownOpen(!isCurrencyDropdownOpen)}
               className="flex items-center hover:text-[#0052B4]"
             >
-              {currency}
+              {currencyLabels[currency]}
               {isCurrencyDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             </button>
 
             {isCurrencyDropdownOpen && (
-              <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-32 z-50">
-                {["NGN", "USD", "GBP", "EUR", "ZAR"].map((cur) => (
+              <div className="absolute top-full mt-2 bg-white shadow-md rounded-md w-56 z-50">
+                {(Object.keys(currencyLabels) as Currency[]).map((cur) => (
                   <button
                     key={cur}
                     onClick={() => {
@@ -111,7 +112,7 @@ const Navbar = () => {
                     }}
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100"
                   >
-                    {cur}
+                    {currencyLabels[cur]}
                   </button>
                 ))}
               </div>
@@ -125,7 +126,7 @@ const Navbar = () => {
           </Link>
 
           {/* Account with sky-blue bar */}
-           <div className=" relative -top-6 h-20 flex items-center bg-[#0500FF] px-4">
+          <div className=" relative -top-6 h-20 flex items-center bg-[#0500FF] px-4">
             <button 
               onClick={toggleAccountDropdown}
               className="hidden md:flex items-center space-x-1 sm:space-x-2 text-white"
@@ -137,18 +138,8 @@ const Navbar = () => {
             
             {isAccountDropdownOpen && (
               <div className="absolute left-0 mt-20 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
-                <Link 
-                  href="/account/login"
-                  className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
-                >
-                  Log In
-                </Link>
-                <Link 
-                  href="/account/signup"
-                  className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]"
-                >
-                  Sign Up
-                </Link>
+                <Link href="/account/login" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]">Log In</Link>
+                <Link href="/account/signup" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4]">Sign Up</Link>
               </div>
             )}
           </div>
@@ -195,30 +186,22 @@ const Navbar = () => {
             <Link href="/about" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">About Us</Link>
             <Link href="/Information/newsletter" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Newsletter</Link>
             
-        
-            {/* <Link href="/account" className="md:hidden flex items-center space-x-2 py-2 px-3 rounded-md hover:text-[#0052B4] text-black">
-              <User size={18} />
-              <span>Account</span>
-            </Link> */}
+            <div className="relative">
+              <button
+                onClick={() => setAccountDropdownOpen(!isAccountDropdownOpen)}
+                className="flex items-center justify-between w-full py-2 px-3 rounded-md hover:bg-gray-100 hover:text-[#0052B4] text-black"
+              >
+                Account
+                {isAccountDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+              </button>
 
-            
-<div className="relative">
-      <button
-        onClick={() => setAccountDropdownOpen(!isAccountDropdownOpen)}
-        className="flex items-center justify-between w-full py-2 px-3 rounded-md hover:bg-gray-100 hover:text-[#0052B4] text-black"
-      >
-          Account
-        {isAccountDropdownOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-      </button>
-
-      {isAccountDropdownOpen && (
-        <div className="pl-4 mt-1 space-y-2">
-          <Link href="/account/login" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black" > Log In </Link>
-          <Link href="/account/signup" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black" > Sign Up</Link>
-        </div>
-         )}
-         </div>
-         
+              {isAccountDropdownOpen && (
+                <div className="pl-4 mt-1 space-y-2">
+                  <Link href="/account/login" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black">Log In</Link>
+                  <Link href="/account/signup" className="block py-2 px-3 text-sm hover:bg-gray-100 rounded-md hover:text-[#0052B4] text-black">Sign Up</Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

@@ -38,7 +38,7 @@ const MissionVision = () => {
         <div className="md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#0052B4]">Our Vision</h2>
           <p className="text-gray-700 text-xl leading-relaxed">
-            We envision a future where businesses and individuals navigate the digital world without fear of cyber threats. By combining artificial intelligence with adaptive cybersecurity measures, we aim to lead the industry in creating a safer digital ecosystem for everyone.
+            We envision a future where businesses and individuals navigate the digital world without fear of cyber threats. By combining artificial intelligence with adaptive cybersecurity measures, we lead the industry in creating a safer digital ecosystem for everyone.
             <br /><br />
             Our forward-thinking approach anticipates emerging threats and develops proactive solutions, setting new standards for digital security worldwide while maintaining accessibility for all users.
           </p>

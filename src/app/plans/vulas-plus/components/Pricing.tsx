@@ -47,7 +47,16 @@ const Pricing = () => {
             <div className="flex-grow">
               <h3 className="font-bold text-xl mb-2 text-black">{plan.name}</h3>
 
-              {!plan.isCustom && (
+              {/* {!plan.isCustom && (
+                <p className="text-2xl font-semibold mb-2 text-black">
+                  {formatCurrency(plan.price, currency)}
+                </p>
+              )} */}
+
+                {plan.isCustom ? (
+                // placeholder to keep spacing consistent
+                <div className="h-8 mb-2">Negotiable</div>
+              ) : (
                 <p className="text-2xl font-semibold mb-2 text-black">
                   {formatCurrency(plan.price, currency)}
                 </p>

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -13,11 +14,13 @@ const HeroSection = () => {
              Whether you’re an individual, institution, or enterprise; our solutions adapt to 
           your unique needs. Fully customizable, AI-powered, and built to evolve with you.
         </p>
+         <Link href="#features">
         <button 
           className="bg-white text-[#0052B4] px-6 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 font-medium text-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0052B4]"
         >
           Explore Custom Solutions
         </button>
+        </Link>
       </div>
       <div className="md:w-1/2">
         <Image 
