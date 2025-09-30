@@ -10,7 +10,7 @@ const HeroSection = () => {
           with Advanced
           AI Solutions
           <br />
-          <span className="text-white">for Enterprise Security</span>
+          <span className="text-white">for Corporate Security</span>
         </h1>
         <p className="text-xl text-white/90 mb-6">
           Automating security processes to improve efficiency, using AI to predict and mitigate risks before they materialize.
@@ -24,12 +24,12 @@ const HeroSection = () => {
         </Link>
       </div>
       <div className="md:w-1/2">
-        <Image 
+        <img 
           src="/corporate.svg" 
           alt="Enterprise Security" 
           width={600} 
           height={400}
-          className="rounded-lg"
+          className=" rounded-lg"
         />
       </div>
     </div>

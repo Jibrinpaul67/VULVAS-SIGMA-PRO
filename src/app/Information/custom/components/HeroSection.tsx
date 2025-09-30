@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
       <div className="md:w-1/2">
         <Image 
-          src="/corporate.svg" 
+          src="/custom.svg" 
           alt="Enterprise Security" 
           width={600} 
           height={400}

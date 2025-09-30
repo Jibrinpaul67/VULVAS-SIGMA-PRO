@@ -24,10 +24,10 @@ const HeroSection = () => {
       </div>
       <div className="md:w-1/2">
         <Image 
-          src="/institution.svg" 
+          src="/individual.svg" 
           alt="Institution Security" 
           width={600} 
-          height={400}
+          height={100}
           className="rounded-lg"
         />
       </div>
