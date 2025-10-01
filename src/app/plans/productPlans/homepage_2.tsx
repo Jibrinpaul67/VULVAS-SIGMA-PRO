@@ -8,7 +8,7 @@ const HomePage2 = () => {
       {/* Image on left */}
       <div className="w-full md:w-1/2 flex justify-center">
         <Image 
-          src="/private.svg" 
+          src="/padlocman.svg" 
           alt="Antivirus Plans" 
           width={500} 
           height={400} 

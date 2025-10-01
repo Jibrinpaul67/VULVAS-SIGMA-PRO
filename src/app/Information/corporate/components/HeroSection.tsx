@@ -24,7 +24,7 @@ const HeroSection = () => {
         </Link>
       </div>
       <div className="md:w-1/2">
-        <img 
+        <Image
           src="/corporate.svg" 
           alt="Enterprise Security" 
           width={600} 

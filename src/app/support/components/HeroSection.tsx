@@ -18,7 +18,7 @@ const HeroSection = () => {
       </div>
       <div className="md:w-1/2">
         <Image 
-          src="/support/images/support-hero.png" 
+          src="/contact.svg" 
           alt="24/7 Support" 
           width={500} 
           height={350}

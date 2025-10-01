@@ -17,7 +17,7 @@ const HeroSection = () => {
       </div>
       <div className="w-full md:w-[40%] flex justify-center">
         <Image 
-          src="/price.svg" 
+          src="/private.svg" 
           alt="Security illustration" 
           width={450} 
           height={350} 
