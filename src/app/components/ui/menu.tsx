@@ -51,9 +51,12 @@ const Navbar = () => {
             <Image 
               src="/vulas_logo.svg" 
               alt="VULAS Logo" 
-              width={100} 
+              width={150} 
               height={100} 
-              className="w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] hover:opacity-80 transition-opacity"
+                style={{
+    marginTop: '-20px',
+  }}
+              // className="w-[200px] h-[200px] sm:w-[100px] sm:h-[100px] hover:opacity-80 transition-opacity"
               priority
             />
           </Link>

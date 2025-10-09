@@ -15,8 +15,8 @@ const SupportChannels = () => {
           <Image
             src="/inbox.svg"
             alt="Email Support"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
           />
           <div>
             <h3 className="text-lg font-bold text-black">Need Assistance?</h3>
@@ -34,10 +34,10 @@ const SupportChannels = () => {
         {/* Phone */}
         <div className="flex items-start gap-4 p-4 border rounded-lg">
           <Image
-            src="/expert.svg"
+            src="/videocall.svg"
             alt="Phone Support"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
           />
           <div>
             <h3 className="text-lg font-bold text-black">Talk to an Expert</h3>
@@ -57,8 +57,8 @@ const SupportChannels = () => {
           <Image
             src="/businesscall.svg"
             alt="Quick Call"
-             width={100}
-            height={100}
+             width={150}
+            height={150}
           />
           <div>
             <h3 className="text-lg font-bold text-black">Find Answers Faster</h3>
@@ -78,8 +78,8 @@ const SupportChannels = () => {
           <Image
             src="/form.svg"
             alt="Support Form"
-             width={100}
-            height={100}
+             width={150}
+            height={150}
           />
           <div>
             <h3 className="text-lg font-bold text-black">Support Request Form</h3>
