@@ -128,10 +128,10 @@ const Navbar = () => {
           </Link>
 
           {/* Account with sky-blue bar */}
-          <div className=" relative -top-6 h-20 flex items-center bg-[#0500FF] px-4">
+          <div className=" relative -top-4 h-20 flex items-center bg-[#0500FF] px-4">
             <button 
               onClick={toggleAccountDropdown}
-              className="hidden md:flex items-center space-x-1 sm:space-x-2 text-white"
+              className="hidden md:flex items-center space-x-1 sm:space-x-2 text-white mt-6"
             >
               <User size={16} className="sm:w-5 sm:h-5 text-white" />
               Account
