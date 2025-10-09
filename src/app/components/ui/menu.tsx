@@ -81,7 +81,6 @@ const Navbar = () => {
             </div>
  
             <Link href="/plans/productPlans" className="hover:underline hover:text-[#0052B4]">Product Plans</Link>
-            <Link href="/privacy" className="hover:underline hover:text-[#0052B4]">Privacy</Link>
             <Link href="/Information/partners" className="hover:underline hover:text-[#0052B4]">Partners</Link>
             <Link href="/about" className="hover:underline hover:text-[#0052B4]">About Us</Link>
             <Link href="/Information/newsletter" className="hover:underline hover:text-[#0052B4]">Newsletter</Link> 
@@ -181,7 +180,6 @@ const Navbar = () => {
             </div>
 
             <Link href="/plans/productPlans" className="hover:underline hover:text-[#0052B4] text-black">Product Plans</Link>
-            <Link href="/privacy" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Privacy</Link>
             <Link href="/Information/partners" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Partners</Link>
             <Link href="/about" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">About Us</Link>
             <Link href="/Information/newsletter" className="py-2 hover:bg-gray-100 px-3 rounded-md hover:text-[#0052B4] text-black">Newsletter</Link>

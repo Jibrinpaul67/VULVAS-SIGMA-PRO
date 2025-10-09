@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Button from '@/app/components/ui/button';
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -12,9 +13,12 @@ const HeroSection = () => {
         <p className="text-xl text-gray-600 mb-6">
           We&apos;re here to help anytime, anywhere.
         </p>
+   <Link href="#features">
         <Button className="bg-[#00003B] text-white px-6 py-3 rounded-full hover:bg-[#00002A]">
           Contact us Today
         </Button>
+             
+        </Link>
       </div>
       <div className="md:w-1/2">
         <Image 
